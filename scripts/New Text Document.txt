@@ -1,0 +1,22 @@
+# Add account
+Add-AzureAccount
+
+# Get details
+Get-AzureAccount
+Get-AzureSubscription
+
+# Connect to cluster
+Use-AzureHDInsightCluster <myClusterName>
+
+# Run Hive Example
+Invoke-Hive "select country, state, count(*) as records from hivesampletable group by country, state order by records desc limit 5"
+
+# Run (and debug) Hadoop example
+$jarFile = "/example/jars/hadoop-examples.jar"
+$className = "wordcount"
+$statusDirectory = "/samples/wordcount/status"
+$inputDirectory = "/example/data/gutenberg"
+$wordCount = New-AzureHDInsightMapReduceJobDefinition -JarFile $jarFile -ClassName $className -Arguments $inputDirectory, $outputDirectory -StatusFolder $statusDirectory
+$wordCountJob = $wordCount | Start-AzureHDInsightJob -Cluster dsikargmshadoopworkshop | Wait-AzureHDInsightJob
+Write-Host $wordCount
+
