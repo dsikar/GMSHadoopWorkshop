@@ -1,0 +1,20 @@
+# instant git for colaborators
+
+# create git account
+# install tools
+
+# clone repository
+git clone https://github.com/dsikar/GMSHadoopWorkshop.git
+
+# add/edit files and directories
+git add .
+git add <folder>/*
+
+# commit changes
+git commit -m "Commit message"
+
+# push changes
+git push origin master
+
+# check branch status
+git status
