@@ -2,5 +2,6 @@
 
 Helper scripts
 
+* AWS
 * Windows Azure
 
