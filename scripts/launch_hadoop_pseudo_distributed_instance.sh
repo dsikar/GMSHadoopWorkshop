@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
+# TODO add security group and key pairs steps
 # run hadoop instance
 # nb v0.2 ami-72a0b713
 # v0.1 ami-3b93845a
