@@ -19,5 +19,9 @@ git push origin master
 # check branch status
 git status
 
-# get any changes
+# get changes
 git pull
+
+# deleted files
+git add --all
+

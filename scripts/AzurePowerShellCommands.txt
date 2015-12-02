@@ -20,3 +20,6 @@ $wordCount = New-AzureHDInsightMapReduceJobDefinition -JarFile $jarFile -ClassNa
 $wordCountJob = $wordCount | Start-AzureHDInsightJob -Cluster dsikargmshadoopworkshop | Wait-AzureHDInsightJob
 Write-Host $wordCount
 
+# All Azure cmdlets
+powershell_ise
+# Command > Name: Azure
