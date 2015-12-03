@@ -12,3 +12,5 @@ wget http://apache.mirrors.hoobly.com/hadoop/common/hadoop-2.7.1/hadoop-2.7.1.ta
 sudo tar -zxvf hadoop-2.7.1.tar.gz -C /usr/local/
 # remove
 rm hadoop-2.7.1.tar.gz
+# check version
+java -version
