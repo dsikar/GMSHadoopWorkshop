@@ -1,27 +1,35 @@
 # instant git for colaborators
 
+# ubuntu
+sudo apt-get install git
+
 # create git account
 # install tools
 
-# clone repository
+# SSH
+# see https://help.github.com/articles/generating-ssh-keys/
+
+# clone repo
 git clone https://github.com/dsikar/GMSHadoopWorkshop.git
+
+# add colaborators i.e. Settings>Collaborators - add all participants 
 
 # add/edit files and directories
 git add .
 git add <folder>/*
 
+# check branch status
+git status
+
 # commit changes
 git commit -m "Commit message"
 
 # push changes
-git push origin master
+git push
 
-# check branch status
-git status
-
-# get changes
+# get changes - pull = fetch + merge
 git pull
 
-# deleted files
+# delete files
 git add --all
 
